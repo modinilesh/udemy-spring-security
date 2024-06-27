@@ -1,14 +1,16 @@
 package com.modinilesh.spring_security.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WelcomeRestcontroller {
+@RequestMapping("/banking")
+public class LoanController {
 	
-	@GetMapping("/welcome")
-	public String welcome()
+	@GetMapping("/myLoans")
+	public String myLoans()
 	{
-		return "Welcome to Spring security demo project";
+		return "Welcome to myLoans";
 	}
 }
